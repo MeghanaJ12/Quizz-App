@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Disney Quiz App</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="container">
+	<header>
+	<div class ="pull-left">The Disney Quiz</div>
+	<div class ="pull-right">By - Meghana J.</div>
+	</header>
+
+	<main>
+<form action="" class = "questionForm" id ="startPage">
+		<h2>How well do you know your Disney movies</h2><br>
+		<button  id ='submit' type="submit">Start</button>
+		</form>
+<form action="" class = "questionForm" id ="Q1" data-question"1">
+			<h3>1. Who was Ariel's Father</h3>
+			<ul>
+<li><input type="radio" required=required name="Q1"value = "A">King Triton</input></li>
+<li> <input type="radio"  name="Q1"value = "B">King Atlantis</input></li>
+<li><input type="radio" name="Q1"value = "C">King Poseidon</input></li>
+<li><input type="radio"  name="Q1"value = "D">Mr. Merman</input></li>
+			</ul>
+
+			<button id = 'submit' type = "submit">Submit</button>
+		</form>
+</form>
+<form action="" class = "questionForm" id ="Q2"data-question"2">
+	<h3>2. What does Ariel collect?</h3>
+	<ul>
+		<li><input type="radio" required name="Q2"value = "A">Sea Shells</input></li>
+		<li> <input type="radio"  name="Q2"value = "B">Eeels</input></li>
+		<li><input type="radio"  name="Q2"value = "C">Human Items</input></li>
+		<li><input type="radio"  name="Q2"value = "D">Sea weed</input></li>
+	</ul>
+	<button id = 'submit'>Submit</button>
+</form>
+
+<form action="" class = "questionForm" id ="Q3"data-question"3">
+	<h3>3. What is the name of the mouse Cinderella rescues?</h3>
+	<ul>
+		<li><input type="radio" required name="Q3"value = "A">Gus</input></li>
+		<li> <input type="radio"  name="Q3"value = "B">Chad</input></li>
+		<li><input type="radio" name="Q3"value = "C">Jackie</input></li>
+		<li><input type="radio" name="Q3"value = "D">Vinny</input></li>
+	</ul>
+	<button id = 'submit' type = "submit">Submit</button>
+</form>
+
+<form action="" class = "questionForm" id ="Q4"data-question"4">
+	<h3>4. What phrase does fariy God mother say to work her magic?</h3>
+	<ul>
+		<li><input type="radio" required name="Q4"value = "A">Bip Bop Bim </input></li>
+		<li> <input type="radio"  name="Q4"value = "B">Boo Bo Boo</input></li>
+		<li><input type="radio" name="Q4"value = "C">BoxCar Boom</input></li>
+		<li><input type="radio"  name="Q4"value = "D">Bipitty Bopitty Boo</input></li>
+	</ul>
+	<button id = 'submit'>Submit</button>
+</form>
+
+
+
+
+<form action="" class = "questionForm" id ="Q5"data-question"5">
+	<h3>5. What was Dory's first line in the movie finding Dory?</h3>
+	<ul>
+		<li><input type="radio" required = 'required' name="Q5"value = "A">"Look out"</input></li>
+		<li> <input type="radio" name="Q5"value = "B">"Hi! I am Dory"</input></li>
+		<li><input type="radio" name="Q5"value = "C">"Just Keep Swimming"</input></li>
+		<li><input type="radio" name="Q5"value = "D">"Hey there , Mr. Grumpy Gills"</input></li>
+	</ul>
+	<button id = 'submit'>Submit</button>
+</form>
+
+<form action="" class = "questionForm" id ="Q6"data-question"6">
+	<h3>6. What is the name of Mickey mouse's dog?</h3>
+	<ul>
+		<li><input type="radio" required = 'required'name="Q6"value = "A">Goofy</input></li>
+		<li> <input type="radio" name="Q6"value = "B">Mars</input></li>
+		<li><input type="radio"  name="Q6"value = "C">Neptune</input></li>
+		<li><input type="radio"  name="Q6"value = "D">Pluto</input></li>
+
+	</ul>
+	<button id = 'submit'>Submit</button>
+</form>
+
+
+
+	<form action="" class = "questionForm" id ="resultPage">
+		<h3>Your score is : <span id='scoreKeeper'></span>    / 6 . You can restart again</h3>
+
+		<button  id ='submit' type="submit">RESTART</button>
+		</form>
+
+	</main>
+	<footer>
+<h4>Total Questions: 6</h4>
+	</footer>
+</div><!--  container -->
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+  <script type="text/javascript"src="script.js"></script>
+
+</body>
+</html>
