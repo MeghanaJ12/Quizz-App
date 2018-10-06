@@ -56,14 +56,17 @@ $(
 			$('.questionForm').hide();
 			processor('Q1');
 			$("#scoreKeeper").text(score);
+			
 
 			$('#Q2').fadeIn(300);
+
 
 		});
 
 		$('#Q2 #submit').click(function(event)
 		{
 			event.preventDefault();
+			$('#scoreTeller').text('');
 			$('.questionForm').hide();
 			processor('Q2');
 			$("#scoreKeeper").text(score);
@@ -131,14 +134,21 @@ function processor(q){
 		let submitted = $('input[name =Q1]:checked').val();
 		if (submitted === sessionStorage.a1){
 			score++;
+			$('#scoreTeller').append(". You are correct");
 
 		}
-
+		else 
+			$('#scoreTeller').append("  You are Wrong");
 	}
 		if (q === 'Q2'){
 		let submitted = $('input[name =Q2]:checked').val();
 		if (submitted === sessionStorage.a2){
 			score++;
+			$('#scoreTeller').append(". You are correct");
+
+		}
+		else 
+			$('#scoreTeller').append("  You are Wrong");
 
 		}
 
@@ -149,34 +159,56 @@ function processor(q){
 		let submitted = $('input[name =Q3]:checked').val();
 		if (submitted === sessionStorage.a3){
 			score++;
+			$('#scoreTeller').append(". You are correct");
+
+		}
+		else 
+			$('#scoreTeller').append("  You are Wrong");
 
 		}
 
-	}
+	
 
 	if (q === 'Q4'){
 		let submitted = $('input[name =Q4]:checked').val();
 		if (submitted === sessionStorage.a4){
 			score++;
+			$('#scoreTeller').append(". You are correct");
+
+		}
+		else 
+			$('#scoreTeller').append("  You are Wrong");
 
 		}
 
-	}
+	
 
 	if (q === 'Q5'){
 		let submitted = $('input[name =Q5]:checked').val();
 		if (submitted === sessionStorage.a5){
 			score++;
+			$('#scoreTeller').append(". You are correct");
+
+		}
+		else 
+			$('#scoreTeller').append("  You are Wrong");
 
 		}
 
-	}
+	
 
 
 	if (q === 'Q6'){
 		let submitted = $('input[name =Q6]:checked').val();
 		if (submitted === sessionStorage.a6){
 			score++;
+			$('#scoreTeller').append(". You are correct");
+
+		}
+		else 
+			$('#scoreTeller').append("  You are Wrong");
+
+		
 
 
 		}
@@ -185,10 +217,10 @@ function processor(q){
 
 
 
-	}
+	
 
 
-}
+
 window.addEventListener('load',init,false);
 
 
