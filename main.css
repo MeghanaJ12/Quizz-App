@@ -5,20 +5,17 @@ body{
 	font-family: arial;
 	font-size: 16px;
 	line-height: 1.6em;  
-  width: 100%;
-  height: 100%;
-
 }
 
 #submit:hover{
   cursor: pointer;
 }
 
-.container {
+.app {
 
       width: 80%;
       vertical-align: middle;
-      margin: 0 auto;
+      
       overflow: auto;
       background: 
                 linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
@@ -27,6 +24,9 @@ body{
       font-size: 18px;
       background-size: cover;
       text-shadow: #e8e2e2;
+
+      
+
       
  
 
